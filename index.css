@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    background-image: url('https://res.cloudinary.com/duyhbrsgi/image/upload/v1710421996/mobishaala_cleanup_ykwtvc.png'); /* Chalkboard-styled background with educational icons */
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+@media (min-width: 768px) {  /*Using media queries to make container Responsive*/
+    .main-container {
+        min-height: 100vh;
+        justify-content: center;
+    }
+}
+
+.sub-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .sub-container {
+        max-width: 1140px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.mobishaala-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .mobishaala-container {
+        align-items: flex-start;
+        width: 55%;
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+}
+
+.app-title {
+    color: #fff;
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 40px;
+}
+
+@media (max-width: 767px) {       /* Made Mobishaala Title to visible in desktop view */
+    .app-title {
+        display: none;
+    }
+}
+
+.app-desc {
+    color: #fff;
+    font-size: 20px;
+}
+
+span {
+    color: #FDDA0D;
+    font-weight: 600;
+}
+
+.options-list {
+    padding-left: 13px;
+    margin-left: 0;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .options-list {
+        display: none;
+    }
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {        /* Using media queries to disallow visiblity in desktop view */
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {        /* Using media queries to allow visiblity in desktop view */
+    .desktop {
+        display: none;
+        width: 45%;
+    }
+}
+
+.video-player {                     /*  Styling for video player */
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+.button {                           /* Common Class used to style Buy, Get Started, Download App buttons*/
+    background: #c50606;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.person {
+    color: #fff;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .person {
+        margin-bottom: 0;
+    }
+}
+
+.whatsapp-img {                     /* Styling for Whatsapp logo*/
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.talk-to-us-btn {                   /* Styling for talk to us button */
+    background-color: green;  
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.mobishaala-info-container {
+    background-color: #c50606;
+    padding: 10px 15px;
+}
+
+.infos-container {                     /* Styled Bottom Container for mobile view */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (min-width: 768px) {            /* Using media queries to  styled Bottom Container for desktop view*/
+    .infos-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.info-container {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .info-container {
+        width: 30%;
+    }
+}
+
+.title {
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.info-title {
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.info-desc {
+    color: #fff;
+}
+
+.address {
+    color: #fff;
+    font-weight: 600;
+}
+
+.links-list {
+    list-style-type: none;
+    padding-left: 0;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
